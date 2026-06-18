@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIP 快捷導覽入口網</title>
+    <!-- Tailwind CSS（正確 CDN） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' };</script>
+    <!-- SheetJS：解析與產生 Excel（正確 CDN） -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        html { font-size: 18px; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-thumb { background: #c7c9d1; border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background: #3f4254; }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans text-gray-800 dark:text-gray-100 transition-colors">
+
+    <!-- 頂部導覽列 -->
+    <header class="bg-indigo-600 dark:bg-indigo-800 text-white shadow-md py-4 px-6 mb-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center gap-3">
+            <h1 class="text-xl sm:text-2xl font-bold tracking-wide">🏢 企業內部資訊門戶 (EIP)</h1>
+            <div class="flex items-center gap-2">
+                <span class="hidden sm:inline text-sm bg-indigo-700 dark:bg-indigo-900 px-3 py-1 rounded-full">動態連結產生器</span>
+                <button id="themeToggle" title="切換深色 / 淺色模式"
+                        class="text-lg bg-indigo-700 dark:bg-indigo-900 hover:bg-indigo-500 w-9 h-9 rounded-full flex items-center justify-center transition-colors">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main class="max-w-6xl mx-auto px-4 pb-16">
+
+        <!-- 上傳 / 工具控制面板 -->
+        <section class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 mb-6 border border-gray-100 dark:border-gray-700">
+            <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                <div class="flex-1">
+                    <h2 class="text-lg font-semibold mb-3">更新網頁清單</h2>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                        <input type="file" id="excelFile" accept=".xlsx, .xls"
+                               class="block w-full text-sm text-gray-500 dark:text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 cursor-pointer" />
+                    </div>
+                    <p class="text-xs text-gray-400 dark:text-gray-500 mt-3">
+                        💡 欄位順序：<b class="text-gray-600 dark:text-gray-300">主題</b> | <b class="text-gray-600 dark:text-gray-300">功能名稱</b> | <b class="text-gray-600 dark:text-gray-300">網址路徑</b>（首列為標題）。上傳後清單會記在您的瀏覽器，下次開啟免重上傳。
+                    </p>
+                </div>
+                <div class="flex flex-row lg:flex-col gap-2 shrink-0">
+                    <button id="downloadTemplate"
+                            class="text-sm font-medium px-4 py-2 rounded-md bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-900/40 dark:text-emerald-300 transition-colors whitespace-nowrap">⬇️ 下載 Excel 範本</button>
+                    <button id="clearData"
+                            class="text-sm font-medium px-4 py-2 rounded-md bg-rose-50 text-rose-700 hover:bg-rose-100 dark:bg-rose-900/40 dark:text-rose-300 transition-colors whitespace-nowrap">🗑️ 清除清單</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 搜尋列 -->
+        <section id="searchBar" class="mb-6 hidden">
+            <div class="relative">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
+                <input type="text" id="searchInput" placeholder="搜尋功能或主題…（按 / 快速聚焦）"
+                       class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </div>
+        </section>
+
+        <!-- 我的最愛 -->
+        <section id="favSection" class="mb-6 hidden">
+            <h2 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1">⭐ 我的最愛</h2>
+            <div id="favChips" class="flex flex-wrap gap-2"></div>
+        </section>
+
+        <!-- 最近使用 -->
+        <section id="recentSection" class="mb-8 hidden">
+            <h2 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1">🕘 最近使用</h2>
+            <div id="recentChips" class="flex flex-wrap gap-2"></div>
+        </section>
+
+        <!-- 動態生成的 EIP 連結呈現區 -->
+        <section id="eipContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 預設歡迎畫面 -->
+            <div id="welcome" class="col-span-full text-center py-16 bg-gray-100 dark:bg-gray-800 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600">
+                <p class="text-gray-500 dark:text-gray-400 text-lg">目前尚無清單資料，請先上傳 Excel 檔案以自動生成門戶連結。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+    (function () {
+        "use strict";
+
+        // ---------- 安全的本機儲存（部署後可記住，Claude 預覽環境會自動降級為記憶體） ----------
+        const store = {
+            get(k, def) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch (e) { return mem[k] ?? def; } },
+            set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { mem[k] = v; } },
+            del(k) { try { localStorage.removeItem(k); } catch (e) { delete mem[k]; } }
+        };
+        const mem = {};
+
+        // ---------- 狀態 ----------
+        let rows = store.get('eip_rows', []);          // [[主題,功能,網址], ...]，個人上傳後記在自己瀏覽器
+        let favs = store.get('eip_favs', []);          // [網址, ...]
+        let recent = store.get('eip_recent', []);      // [{name,url,topic}, ...]
+        let usage = store.get('eip_usage', {});        // {網址: 次數}
+        let keyword = '';
+
+        // ---------- 小工具 ----------
+        const $ = id => document.getElementById(id);
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        const fixUrl = u => (/^https?:\/\//i.test(u) ? u : 'https://' + u);
+
+        // ---------- Excel 上傳 ----------
+        $('excelFile').addEventListener('change', function (e) {
+            const file = e.target.files[0];          // ← 原本誤寫成 e.target.parse
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function (ev) {
+                try {
+                    const wb = XLSX.read(new Uint8Array(ev.target.result), { type: 'array' });
+                    const ws = wb.Sheets[wb.SheetNames[0]];
+                    const raw = XLSX.utils.sheet_to_json(ws, { header: 1 });
+                    const valid = raw.slice(1).filter(r => r.length >= 3 && r[0] && r[1] && r[2]);
+                    if (valid.length === 0) { alert('Excel 內無有效資料或格式不符！'); return; }
+                    rows = valid.map(r => [String(r[0]).trim(), String(r[1]).trim(), String(r[2]).trim()]);
+                    store.set('eip_rows', rows);
+                    render();
+                } catch (err) {
+                    alert('讀取失敗：' + err.message);
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        // ---------- 下載範本 ----------
+        $('downloadTemplate').addEventListener('click', function () {
+            const data = [
+                ['主題', '功能名稱', '網址路徑'],
+                ['CPS', '營運系統', 'https://cps.youbike2.com/System/StatSet'],
+                ['VDS', '調度系統', 'https://vds.youbike2.com/Station/Status']
+            ];
+            const ws = XLSX.utils.aoa_to_sheet(data);
+            ws['!cols'] = [{ wch: 12 }, { wch: 18 }, { wch: 45 }];
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, '工作表1');
+            XLSX.writeFile(wb, 'EIP_範本.xlsx');
+        });
+
+        // ---------- 清除 ----------
+        $('clearData').addEventListener('click', function () {
+            if (!confirm('確定要清除清單與所有記錄嗎？')) return;
+            rows = []; favs = []; recent = []; usage = {};
+            ['eip_rows', 'eip_favs', 'eip_recent', 'eip_usage'].forEach(store.del);
+            $('excelFile').value = '';
+            render();
+        });
+
+        // ---------- 搜尋 ----------
+        $('searchInput').addEventListener('input', function () { keyword = this.value.trim().toLowerCase(); renderCards(); });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); $('searchInput').focus(); }
+        });
+
+        // ---------- 深色模式 ----------
+        const theme = store.get('eip_theme', 'light');
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+        $('themeToggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+        $('themeToggle').addEventListener('click', function () {
+            const isDark = document.documentElement.classList.toggle('dark');
+            store.set('eip_theme', isDark ? 'dark' : 'light');
+            this.textContent = isDark ? '☀️' : '🌙';
+        });
+
+        // ---------- 點擊：記錄最近使用與使用次數 ----------
+        function recordClick(item) {
+            usage[item.url] = (usage[item.url] || 0) + 1;
+            recent = [item, ...recent.filter(r => r.url !== item.url)].slice(0, 8);
+            store.set('eip_usage', usage); store.set('eip_recent', recent);
+            renderRecent();
+        }
+
+        function toggleFav(url) {
+            favs = favs.includes(url) ? favs.filter(u => u !== url) : [...favs, url];
+            store.set('eip_favs', favs);
+            render();
+        }
+
+        // 將點擊綁定暴露給內嵌的 onclick
+        window.__eip = { recordClick, toggleFav };
+
+        // ---------- 渲染 ----------
+        function grouped() {
+            const g = {};
+            rows.forEach(([topic, name, url]) => {
+                const u = fixUrl(url);
+                (g[topic] = g[topic] || []).push({ topic, name, url: u });
+            });
+            return g;
+        }
+
+        function renderFavs() {
+            const wrap = $('favSection'), box = $('favChips');
+            const all = rows.map(([t, n, u]) => ({ topic: t, name: n, url: fixUrl(u) }));
+            const list = all.filter(i => favs.includes(i.url));
+            if (!list.length) { wrap.classList.add('hidden'); return; }
+            wrap.classList.remove('hidden');
+            box.innerHTML = list.map(i => `
+                <a href="${esc(i.url)}" target="_blank" onclick='window.__eip.recordClick(${JSON.stringify(i)})'
+                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-amber-50 text-amber-800 hover:bg-amber-100 dark:bg-amber-900/40 dark:text-amber-200 border border-amber-200 dark:border-amber-800 transition-colors">
+                   ⭐ ${esc(i.name)} <span class="text-xs opacity-60">${esc(i.topic)}</span>
+                </a>`).join('');
+        }
+
+        function renderRecent() {
+            const wrap = $('recentSection'), box = $('recentChips');
+            if (!recent.length) { wrap.classList.add('hidden'); return; }
+            wrap.classList.remove('hidden');
+            box.innerHTML = recent.map(i => `
+                <a href="${esc(i.url)}" target="_blank" onclick='window.__eip.recordClick(${JSON.stringify(i)})'
+                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 transition-colors">
+                   ${esc(i.name)}
+                </a>`).join('');
+        }
+
+        function renderCards() {
+            const container = $('eipContainer');
+            const data = grouped();
+            const topics = Object.keys(data);
+
+            if (!topics.length) {
+                container.innerHTML = `<div class="col-span-full text-center py-16 bg-gray-100 dark:bg-gray-800 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600">
+                    <p class="text-gray-500 dark:text-gray-400 text-lg">目前尚無清單資料，請先上傳 Excel 檔案以自動生成門戶連結。</p></div>`;
+                return;
+            }
+
+            let html = '';
+            let matched = 0;
+            topics.forEach(topic => {
+                const items = data[topic].filter(i =>
+                    !keyword || i.name.toLowerCase().includes(keyword) || topic.toLowerCase().includes(keyword));
+                if (!items.length) return;
+                matched += items.length;
+                html += `
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 p-6 flex flex-col hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4 border-b border-gray-100 dark:border-gray-700 pb-3">
+                        <span class="w-2.5 h-6 bg-indigo-500 rounded-full mr-2.5"></span>
+                        <h3 class="text-lg font-bold">${esc(topic)}</h3>
+                        <span class="ml-auto text-xs bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-300 font-medium px-2 py-0.5 rounded-md">${items.length} 個項目</span>
+                    </div>
+                    <ul class="space-y-1.5 flex-1">`;
+                items.forEach(i => {
+                    const fav = favs.includes(i.url);
+                    const count = usage[i.url] ? `<span class="text-xs text-gray-400">${usage[i.url]}次</span>` : '';
+                    html += `
+                        <li class="flex items-center gap-1 group">
+                            <button onclick='window.__eip.toggleFav(${JSON.stringify(i.url)})' title="加入/移除我的最愛"
+                                    class="text-base shrink-0 ${fav ? 'text-amber-400' : 'text-gray-300 dark:text-gray-600 hover:text-amber-400'} transition-colors">${fav ? '⭐' : '☆'}</button>
+                            <a href="${esc(i.url)}" target="_blank" onclick='window.__eip.recordClick(${JSON.stringify(i)})'
+                               class="flex-1 flex items-center justify-between p-2 rounded-lg text-base font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50/50 dark:hover:bg-indigo-900/20 transition-colors">
+                                <span class="truncate flex items-center gap-2">${esc(i.name)} ${count}</span>
+                                <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </li>`;
+                });
+                html += `</ul></div>`;
+            });
+
+            if (!matched) {
+                html = `<div class="col-span-full text-center py-12 text-gray-400">找不到符合「${esc(keyword)}」的項目。</div>`;
+            }
+            container.innerHTML = html;
+        }
+
+        function render() {
+            const hasData = rows.length > 0;
+            $('searchBar').classList.toggle('hidden', !hasData);
+            renderFavs();
+            renderRecent();
+            renderCards();
+        }
+
+        render();
+    })();
+    </script>
+</body>
+</html>
