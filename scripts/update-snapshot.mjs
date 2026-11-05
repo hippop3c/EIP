@@ -1,0 +1,10 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { refreshForms } from '../progress.js';
+const target = new URL('../data/dashboard.json', import.meta.url);
+const data = JSON.parse(await readFile(target, 'utf8'));
+data.forms = await refreshForms(data.forms);
+data.generatedAt = new Date().toISOString();
+await writeFile(target, JSON.stringify(data, null, 2) + '\n');
+const failed = data.forms.filter(f => f.refreshError).map(f => ({ name: f.name, error: f.refreshError }));
+console.log(JSON.stringify({ refreshed: data.forms.filter(f => f.fetchSpec && !f.refreshError).length, failed }, null, 2));
+if (failed.length) process.exitCode = 1;

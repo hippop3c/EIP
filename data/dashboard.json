@@ -1,0 +1,2083 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-05T16:53:05.110Z",
+  "sourceFile": "北營處客服+調度組-統計報表連結v1.xlsx",
+  "catalogModifiedAt": "2026-11-05T16:18:12Z",
+  "notes": [
+    "7份公開摘要可按更新進度直接重讀；其餘已核對摘要為本次讀取快照，各自標示資料日期與擷取時間。Google登入與帳密不會傳給本站。",
+    "17份原始線下表單待提供資料；8份調度表單已登入確認仍需存取權；4份來源尚無填報資料。缺漏不以零表示。"
+  ],
+  "groups": [
+    {
+      "name": "調度",
+      "subtitle": "車況追蹤 · 人力配置",
+      "focusIds": [
+        "dispatch-3",
+        "dispatch-6"
+      ],
+      "formIds": [
+        "dispatch-2",
+        "dispatch-3",
+        "dispatch-4",
+        "dispatch-5",
+        "dispatch-6",
+        "dispatch-7",
+        "dispatch-8",
+        "dispatch-9",
+        "dispatch-10",
+        "dispatch-11",
+        "dispatch-12",
+        "dispatch-13",
+        "dispatch-14",
+        "dispatch-15",
+        "dispatch-16",
+        "dispatch-17"
+      ]
+    },
+    {
+      "name": "維護",
+      "subtitle": "專案執行 · 更換進度",
+      "focusIds": [
+        "maintenance-0"
+      ],
+      "formIds": [
+        "maintenance-0",
+        "maintenance-1972736981",
+        "maintenance-930787254",
+        "maintenance-1144995221",
+        "maintenance-1141145054",
+        "maintenance-1109546758",
+        "maintenance-47617749",
+        "maintenance-1025413118",
+        "maintenance-1094019733",
+        "maintenance-1927417242",
+        "maintenance-336590962",
+        "maintenance-343650301",
+        "maintenance-306750949",
+        "maintenance-1719786781",
+        "maintenance-1283990841",
+        "maintenance-659786688",
+        "maintenance-205253939"
+      ]
+    },
+    {
+      "name": "客服",
+      "subtitle": "車機與車鎖 · 異常追蹤",
+      "focusIds": [
+        "customer-24"
+      ],
+      "formIds": [
+        "customer-2",
+        "customer-3",
+        "customer-4",
+        "customer-5",
+        "customer-6",
+        "customer-7",
+        "customer-8",
+        "customer-9",
+        "customer-10",
+        "customer-11",
+        "customer-12",
+        "customer-13",
+        "customer-14",
+        "customer-15",
+        "customer-16",
+        "customer-17",
+        "customer-18",
+        "customer-19",
+        "customer-20",
+        "customer-21",
+        "customer-22",
+        "customer-23",
+        "customer-24",
+        "customer-25",
+        "customer-26"
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "id": "dispatch-2",
+      "group": "調度",
+      "name": "調度中車輛需帶回清單",
+      "url": "https://docs.google.com/spreadsheets/d/1JGKi1FclnBXK0v1RA_BcftThbwfuy_WevVe4RTp_ApI/edit?gid=0#gid=0",
+      "purpose": "低電量、故障，協送維護所",
+      "sourceSheet": "調度",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "調度中車輛需帶回清單",
+        "summary": "具有效填寫日期與7碼外觀車號的清單紀錄 2371 筆；其中 1957 筆有回填入廠資訊。",
+        "metrics": [
+          {
+            "label": "清單紀錄",
+            "value": 2371,
+            "unit": "筆"
+          },
+          {
+            "label": "入廠欄已回填",
+            "value": 1957,
+            "unit": "筆"
+          },
+          {
+            "label": "入廠欄未回填",
+            "value": 414,
+            "unit": "筆"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "以A欄有效填寫日期、B欄7碼外觀車號篩選紀錄；H欄只判斷有無回填，不推定已入廠或已完成。",
+          "資料日期為最新填寫日期；同一車輛可有多筆紀錄，筆數不等於車輛數。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1JGKi1FclnBXK0v1RA_BcftThbwfuy_WevVe4RTp_ApI/edit?gid=0#gid=0"
+      }
+    },
+    {
+      "id": "dispatch-3",
+      "group": "調度",
+      "name": "調度車車輛狀況統計",
+      "url": "https://docs.google.com/spreadsheets/d/1nwSd7m2fPmm4s_CQfJeXDI1Nkqe5HMIoQiTaIK7pvZ0/edit?gid=1103603358#gid=1103603358",
+      "purpose": "調度車保養維修",
+      "sourceSheet": "調度",
+      "sourceRow": 3,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "調度車車輛狀況統計",
+        "summary": "名冊列管 168 輛，30 輛填有車況註記；最新里程紀錄日期 2026-11-05。",
+        "metrics": [
+          {
+            "label": "列管車輛",
+            "value": 168,
+            "unit": "輛"
+          },
+          {
+            "label": "有車況註記",
+            "value": 30,
+            "unit": "輛"
+          },
+          {
+            "label": "未填車況",
+            "value": 138,
+            "unit": "輛"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:53:01.609Z",
+        "notes": [
+          "以「車輛里程總表」M欄不重複車號計數，U欄只判斷是否填有註記；註記包含保養、維修與報廢等，不能等同故障數。",
+          "未填車況不能視為正常；列管數不能視為目前可用車輛數。",
+          "資料截至日期取R欄最新里程紀錄日期，各車紀錄日期不同；不是全表更新時間，也不是表首「今天」。",
+          "另有 2 輛未填里程日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1nwSd7m2fPmm4s_CQfJeXDI1Nkqe5HMIoQiTaIK7pvZ0/edit?gid=1103603358#gid=1103603358"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1nwSd7m2fPmm4s_CQfJeXDI1Nkqe5HMIoQiTaIK7pvZ0/export?format=csv&gid=1103603358&range=M%3AU",
+        "parser": "vehicles"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "dispatch-4",
+      "group": "調度",
+      "name": "車禍追蹤登記表",
+      "url": "https://docs.google.com/spreadsheets/d/1XmeMLhJIfZZBw2FHoB6190vZVqhNOFk6Vb8Ucq4_dj4/edit?gid=600061683#gid=600061683",
+      "purpose": "車禍追蹤",
+      "sourceSheet": "調度",
+      "sourceRow": 4,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "車禍追蹤登記表",
+        "summary": "可辨識日期的事故紀錄 97 筆，88 筆填有結果欄；不能直接視為全部已結案。",
+        "metrics": [
+          {
+            "label": "事故紀錄",
+            "value": 97,
+            "unit": "筆"
+          },
+          {
+            "label": "結果欄已填",
+            "value": 88,
+            "unit": "筆"
+          },
+          {
+            "label": "結果欄未填",
+            "value": 9,
+            "unit": "筆"
+          }
+        ],
+        "asOf": "2026-11-01",
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "以A欄可辨識日期且C欄非空的資料列計數；O欄只統計有無填寫結果，不判定結案。",
+          "最新日期取事故日期，不是進度更新時間；來源另有 1 筆未來日期（包含2626年錯字），未納入最新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1XmeMLhJIfZZBw2FHoB6190vZVqhNOFk6Vb8Ucq4_dj4/edit?gid=600061683#gid=600061683"
+      }
+    },
+    {
+      "id": "dispatch-5",
+      "group": "調度",
+      "name": "人員清冊",
+      "url": "https://docs.google.com/spreadsheets/d/1JhUGkz8Jaxb27bofFmuu5thCPGIFcPjg89sWzkval9A/edit?gid=0#gid=0",
+      "purpose": "人員清冊",
+      "sourceSheet": "調度",
+      "sourceRow": 5,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "人員清冊",
+        "summary": "具有效到職日期與員編的清冊紀錄 1977 筆，涵蓋 1976 個不重複員編。",
+        "metrics": [
+          {
+            "label": "清冊紀錄",
+            "value": 1977,
+            "unit": "筆"
+          },
+          {
+            "label": "不重複員編",
+            "value": 1976,
+            "unit": "個"
+          },
+          {
+            "label": "離職日期空白",
+            "value": 757,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "以員編為5至10碼英數字、姓名非空且到職日期有效篩選；以員編去重。",
+          "離職日期空白只是欄位狀況，不能直接當作有效在職人數；來源未標示整張清冊的更新日期。",
+          "紀錄中最近到職日期為 2026-11-02，此日期不是全表更新時間。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1JhUGkz8Jaxb27bofFmuu5thCPGIFcPjg89sWzkval9A/edit?gid=0#gid=0"
+      }
+    },
+    {
+      "id": "dispatch-6",
+      "group": "調度",
+      "name": "人力缺口",
+      "url": "https://docs.google.com/spreadsheets/d/1whbvCoJLeTv1z2hhOHCVJXLBXY-KWJOQqiV8zmAdw1I/edit?gid=978821517#gid=978821517",
+      "purpose": "面試、繳資料",
+      "sourceSheet": "調度",
+      "sourceRow": 6,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "人力缺口",
+        "summary": "44 個分區，FT 缺額 73 人、PT 缺額 111 人；統計期間 2026-10-30 至 2026-11-05。",
+        "metrics": [
+          {
+            "label": "FT缺額",
+            "value": 73,
+            "unit": "人"
+          },
+          {
+            "label": "PT缺額",
+            "value": 111,
+            "unit": "人"
+          },
+          {
+            "label": "涵蓋分區",
+            "value": 44,
+            "unit": "區"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:52:58.241Z",
+        "notes": [
+          "取「計算」頁三個互斥分區區塊；分別加總E欄FT缺額與H欄PT缺額，與各區塊合計列交叉核對，不重複計入小計。",
+          "FT需求 295 人，日實際 140 人、夜實際 82 人；需求減去日夜實際等於FT缺額 73 人。",
+          "FT與PT分開呈現；資料截至日期取F1統計期間終日。原始目錄連到「排程」，摘要改讀「計算」。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1whbvCoJLeTv1z2hhOHCVJXLBXY-KWJOQqiV8zmAdw1I/edit?gid=978821517#gid=978821517"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1whbvCoJLeTv1z2hhOHCVJXLBXY-KWJOQqiV8zmAdw1I/export?format=csv&gid=978821517&range=A1%3AM55",
+        "parser": "staffing"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "dispatch-7",
+      "group": "調度",
+      "name": "請假紀錄表",
+      "url": "https://docs.google.com/spreadsheets/d/17d3s-wNqGVgVznGjM6MEK781OiSNxW4ikoORKiJJSyo/edit?gid=409675937#gid=409675937",
+      "purpose": "請假申請",
+      "sourceSheet": "調度",
+      "sourceRow": 7,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "請假紀錄表",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/17d3s-wNqGVgVznGjM6MEK781OiSNxW4ikoORKiJJSyo/edit?gid=409675937#gid=409675937"
+      }
+    },
+    {
+      "id": "dispatch-8",
+      "group": "調度",
+      "name": "離職人員程序紀錄表",
+      "url": "https://docs.google.com/spreadsheets/d/1b7VAsZfDBo_oWqDAQaSK2R-7wwF0hkK5_lawJw8T5FI/edit?gid=0#gid=0",
+      "purpose": "離職申請",
+      "sourceSheet": "調度",
+      "sourceRow": 8,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "離職人員程序紀錄表",
+        "summary": "離職程序紀錄 1863 筆，其中 1543 筆填有紙本交接單資訊。",
+        "metrics": [
+          {
+            "label": "程序紀錄",
+            "value": 1863,
+            "unit": "筆"
+          },
+          {
+            "label": "交接單欄已填",
+            "value": 1543,
+            "unit": "筆"
+          },
+          {
+            "label": "交接單欄未填",
+            "value": 320,
+            "unit": "筆"
+          }
+        ],
+        "asOf": "2026-11-04",
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "以員編為5至10碼英數字且姓名非空篩選；同一員工可能有多筆離職程序紀錄，不當作唯一人數。",
+          "只統計K欄「離職交接單(紙本)」是否填寫，不據此宣稱所有離職程序完成。",
+          "資料日期取可辨識且不超過本次讀取日的最近離職日期，不是流程更新時間。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1b7VAsZfDBo_oWqDAQaSK2R-7wwF0hkK5_lawJw8T5FI/edit?gid=0#gid=0"
+      }
+    },
+    {
+      "id": "dispatch-9",
+      "group": "調度",
+      "name": "PT婚喪喜慶",
+      "url": "https://docs.google.com/spreadsheets/d/19I8jrUy7W4L3Z_pdeQscf-FMX786_v7nBdSu6Z-cq4s/edit?gid=0#gid=0",
+      "purpose": "PT有薪假",
+      "sourceSheet": "調度",
+      "sourceRow": 9,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "PT婚喪喜慶",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/19I8jrUy7W4L3Z_pdeQscf-FMX786_v7nBdSu6Z-cq4s/edit?gid=0#gid=0"
+      }
+    },
+    {
+      "id": "dispatch-10",
+      "group": "調度",
+      "name": "拖吊車輛領出紀錄",
+      "url": "https://docs.google.com/spreadsheets/d/1RIYjyvnym00hZTxl1VjVQAKe1fwf63dKPsER2ChdMcs/edit?gid=1589799192#gid=1589799192",
+      "purpose": "拖吊場領車",
+      "sourceSheet": "調度",
+      "sourceRow": 10,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "拖吊車輛領出紀錄",
+        "summary": "2026年表內有效編號與7碼車號紀錄 71 筆，其中 70 筆有有效取回日期。",
+        "metrics": [
+          {
+            "label": "領出紀錄",
+            "value": 71,
+            "unit": "筆"
+          },
+          {
+            "label": "取回日期已填",
+            "value": 70,
+            "unit": "筆"
+          },
+          {
+            "label": "取回日期未填",
+            "value": 1,
+            "unit": "筆"
+          }
+        ],
+        "asOf": "2026-10-08",
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "以A欄數字項次與B欄7碼車號篩選，排除說明與範例列（範例含2099年日期）。",
+          "依F欄有效取回日期計數；不據此推定費用、委任書或其他後續作業已完成。",
+          "資料日期為最近取回日期，不是全表更新時間。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1RIYjyvnym00hZTxl1VjVQAKe1fwf63dKPsER2ChdMcs/edit?gid=1589799192#gid=1589799192"
+      }
+    },
+    {
+      "id": "dispatch-11",
+      "group": "調度",
+      "name": "調度卡平板-盤點表",
+      "url": "https://docs.google.com/spreadsheets/d/163IV0Blv80FYdlv0HUjVhr5T_gpVIC2v31h0O4mGbvQ/edit?gid=2100274769#gid=2100274769",
+      "purpose": "調度卡平板統計",
+      "sourceSheet": "調度",
+      "sourceRow": 11,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "調度卡平板-盤點表",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/163IV0Blv80FYdlv0HUjVhr5T_gpVIC2v31h0O4mGbvQ/edit?gid=2100274769#gid=2100274769"
+      }
+    },
+    {
+      "id": "dispatch-12",
+      "group": "調度",
+      "name": "2.0場站颱風分級2026",
+      "url": "https://docs.google.com/spreadsheets/d/176gEL-advY6Ci4z5ZoRZBeOaUtZH6OvNK4kzLFyXe8o/edit?gid=0#gid=0",
+      "purpose": "場站颱風分級",
+      "sourceSheet": "調度",
+      "sourceRow": 12,
+      "linkStatus": "online",
+      "progress": {
+        "state": "empty",
+        "title": "2.0場站颱風分級2026",
+        "summary": "指定分頁目前是空白填報範本，尚無可核對的填報進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:46:51.695176+00:00",
+        "notes": [
+          "gid=0 只有說明、表頭與2026/10/19範本日期，沒有場站明細；不將空白範本顯示為0件已完成。",
+          "已檢查其他分頁：工作表19與工作表21為空；樹下分級ABCD另有71列，但未確認其對應本次填報的進度與更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/176gEL-advY6Ci4z5ZoRZBeOaUtZH6OvNK4kzLFyXe8o/edit?gid=0#gid=0"
+      }
+    },
+    {
+      "id": "dispatch-13",
+      "group": "調度",
+      "name": "消耗備品領用",
+      "url": "https://docs.google.com/spreadsheets/d/1ce0z1FiLZApobAmsbmvg9nHo-kbv3m27J0XJHrL1ntw/edit?gid=664779502#gid=664779502",
+      "purpose": "備品統計",
+      "sourceSheet": "調度",
+      "sourceRow": 13,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "消耗備品領用",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1ce0z1FiLZApobAmsbmvg9nHo-kbv3m27J0XJHrL1ntw/edit?gid=664779502#gid=664779502"
+      }
+    },
+    {
+      "id": "dispatch-14",
+      "group": "調度",
+      "name": "新北每週四消毒拍照上傳",
+      "url": "https://docs.google.com/spreadsheets/d/1pM3ZcT4TUlsL-to8KmWhJOHaMiLzEN3-USoqHIO9ULU/edit?gid=1588973667#gid=1588973667",
+      "purpose": "場站消毒",
+      "sourceSheet": "調度",
+      "sourceRow": 14,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "新北每週四消毒拍照上傳",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1pM3ZcT4TUlsL-to8KmWhJOHaMiLzEN3-USoqHIO9ULU/edit?gid=1588973667#gid=1588973667"
+      }
+    },
+    {
+      "id": "dispatch-15",
+      "group": "調度",
+      "name": "北區營運處調度執行業務罰單態樣統計表",
+      "url": "https://docs.google.com/spreadsheets/d/1nh8qf1fw6AbOaAwHLsodlyN4sQv-0TU1j3j-nLMQOoE/edit?gid=296338104#gid=296338104",
+      "purpose": "罰單統計",
+      "sourceSheet": "調度",
+      "sourceRow": 15,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "北區營運處調度執行業務罰單態樣統計表",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1nh8qf1fw6AbOaAwHLsodlyN4sQv-0TU1j3j-nLMQOoE/edit?gid=296338104#gid=296338104"
+      }
+    },
+    {
+      "id": "dispatch-16",
+      "group": "調度",
+      "name": "教育訓練",
+      "url": "https://docs.google.com/spreadsheets/d/1VYLi0y1vnura9XsBui-9ffltCcSmBub5GU9RjEMEfV0/edit?gid=1167403880#gid=1167403880",
+      "purpose": "學發中心上課排定",
+      "sourceSheet": "調度",
+      "sourceRow": 16,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "教育訓練",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1VYLi0y1vnura9XsBui-9ffltCcSmBub5GU9RjEMEfV0/edit?gid=1167403880#gid=1167403880"
+      }
+    },
+    {
+      "id": "dispatch-17",
+      "group": "調度",
+      "name": "2023年新進人員獎勵登記(新人獎勵留任獎金)",
+      "url": "https://docs.google.com/spreadsheets/d/1cIqLrTMNaEmDfaAT1_loP7XkxP-5CXb9/edit?gid=1858378702#gid=1858378702",
+      "purpose": "留任獎金核定發放",
+      "sourceSheet": "調度",
+      "sourceRow": 17,
+      "linkStatus": "online",
+      "progress": {
+        "state": "restricted",
+        "title": "2023年新進人員獎勵登記(新人獎勵留任獎金)",
+        "summary": "已以提供的 Google 帳戶登入確認，來源仍顯示「需要存取權」，目前無法讀取進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:52:37.978Z",
+        "notes": [
+          "已登入逐一確認 Google 存取遭拒；網站保留來源入口，未發出存取申請。",
+          "尚無來源數值，不以零代替。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1cIqLrTMNaEmDfaAT1_loP7XkxP-5CXb9/edit?gid=1858378702#gid=1858378702"
+      }
+    },
+    {
+      "id": "maintenance-0",
+      "group": "維護",
+      "name": "2.0E無助力更換電機專案",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=0#gid=0",
+      "purpose": "追蹤專案_2.0E無助力",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "2.0E無助力更換電機專案",
+        "summary": "已更換 146／653 輛，尚餘 507 輛；原表達成率 22.40%。",
+        "metrics": [
+          {
+            "label": "異常車輛",
+            "value": 653,
+            "unit": "輛"
+          },
+          {
+            "label": "已更換電機",
+            "value": 146,
+            "unit": "輛"
+          },
+          {
+            "label": "剩餘車輛",
+            "value": 507,
+            "unit": "輛"
+          },
+          {
+            "label": "達成率",
+            "value": 22.4,
+            "unit": "%"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:53:04.526Z",
+        "notes": [
+          "3次以上：1台K系列電機(暫保留)",
+          "達成率沿用原表顯示值。"
+        ],
+        "details": [
+          {
+            "label": "3次以上",
+            "value": "異常 49 輛／已更換 48 輛／剩餘 1 輛／達成率 98.00%"
+          },
+          {
+            "label": "2次",
+            "value": "異常 139 輛／已更換 98 輛／剩餘 41 輛／達成率 70.50%"
+          },
+          {
+            "label": "1次",
+            "value": "異常 465 輛／已更換 0 輛／剩餘 465 輛／達成率 0.00%"
+          }
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=0#gid=0"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/export?format=csv&gid=0&range=A1:G7",
+        "parser": "maintenance"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "maintenance-1972736981",
+      "group": "維護",
+      "name": "追蹤專案_車機車鎖返修紀錄",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1972736981#gid=1972736981",
+      "purpose": "追蹤專案_車機車鎖返修紀錄",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "車機車鎖返修紀錄",
+        "summary": ">7天未返修數 268件；7日內送修數 492件；7日內返修數 599件；車機MP送修總數 866件",
+        "metrics": [
+          {
+            "label": ">7天未返修數",
+            "value": 268,
+            "unit": "件"
+          },
+          {
+            "label": "7日內送修數",
+            "value": 492,
+            "unit": "件"
+          },
+          {
+            "label": "7日內返修數",
+            "value": 599,
+            "unit": "件"
+          },
+          {
+            "label": "車機MP送修總數",
+            "value": 866,
+            "unit": "件"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:53:04.484Z",
+        "notes": [
+          "原表未標示資料更新日期；讀取時間不代表資料日期。",
+          "合計涵蓋台北／新北 2.0、2.0E 車機及車鎖；各指標期間依原表標示，不互相抵減。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1972736981#gid=1972736981"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/export?format=csv&gid=1972736981&range=A1:F6",
+        "parser": "repairs"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "maintenance-930787254",
+      "group": "維護",
+      "name": "追蹤專案_MP耗電異常",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=930787254#gid=930787254",
+      "purpose": "追蹤專案_MP耗電異常",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "empty",
+        "title": "追蹤專案_MP耗電異常",
+        "summary": "原表分頁目前空白，尚無可列出的進度紀錄。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:43.449Z",
+        "notes": [
+          "已確認來源CSV為空白；未將沒有資料解讀為專案完成。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=930787254#gid=930787254"
+      }
+    },
+    {
+      "id": "maintenance-1144995221",
+      "group": "維護",
+      "name": "追蹤專案_今年度返修3次車機",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1144995221#gid=1144995221",
+      "purpose": "追蹤專案_今年度返修3次車機",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "empty",
+        "title": "追蹤專案_今年度返修3次車機",
+        "summary": "原表分頁目前空白，尚無可列出的進度紀錄。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:43.469Z",
+        "notes": [
+          "已確認來源CSV為空白；未將沒有資料解讀為專案完成。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1144995221#gid=1144995221"
+      }
+    },
+    {
+      "id": "maintenance-1141145054",
+      "group": "維護",
+      "name": "追蹤專案_車輛遺失紀錄3次資料",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1141145054#gid=1141145054",
+      "purpose": "追蹤專案_車輛遺失紀錄3次資料",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "empty",
+        "title": "追蹤專案_車輛遺失紀錄3次資料",
+        "summary": "原表分頁目前空白，尚無可列出的進度紀錄。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:43.440Z",
+        "notes": [
+          "已確認來源CSV為空白；未將沒有資料解讀為專案完成。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1141145054#gid=1141145054"
+      }
+    },
+    {
+      "id": "maintenance-1109546758",
+      "group": "維護",
+      "name": "例行專案_保氣專案",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1109546758#gid=1109546758",
+      "purpose": "例行專案_保氣專案",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "保氣專案",
+        "summary": "累進目標 34,945輛；累進安裝 33,172輛；距目標 1,773輛；累進達成率 94.93%",
+        "metrics": [
+          {
+            "label": "累進目標",
+            "value": 34945,
+            "unit": "輛"
+          },
+          {
+            "label": "累進安裝",
+            "value": 33172,
+            "unit": "輛"
+          },
+          {
+            "label": "距目標",
+            "value": 1773,
+            "unit": "輛"
+          },
+          {
+            "label": "累進達成率",
+            "value": 94.93,
+            "unit": "%"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:53:04.498Z",
+        "notes": [
+          "原表未標示資料更新日期；讀取時間不代表資料日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1109546758#gid=1109546758"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/export?format=csv&gid=1109546758&range=A1:I13",
+        "parser": "air"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "maintenance-47617749",
+      "group": "維護",
+      "name": "例行專案_防水熱縮套管專案",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=47617749#gid=47617749",
+      "purpose": "例行專案_防水熱縮套管專案",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "防水熱縮套管更換專案",
+        "summary": "車輛總數 50,917輛；已更換 8,351輛；待更換 42,566輛",
+        "metrics": [
+          {
+            "label": "車輛總數",
+            "value": 50917,
+            "unit": "輛"
+          },
+          {
+            "label": "已更換",
+            "value": 8351,
+            "unit": "輛"
+          },
+          {
+            "label": "待更換",
+            "value": 42566,
+            "unit": "輛"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:53:05.042Z",
+        "notes": [
+          "原表未標示資料更新日期；讀取時間不代表資料日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=47617749#gid=47617749"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/export?format=csv&gid=47617749&range=A1:D5",
+        "parser": "sleeves"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "maintenance-1025413118",
+      "group": "維護",
+      "name": "例行專案_未觸發還車流程專案",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1025413118#gid=1025413118",
+      "purpose": "例行專案_未觸發還車流程專案",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "未觸發還車流程車鎖異常專案",
+        "summary": "已檢視 49,176輛；待檢視 1,741輛；異常數 39輛；檢視進度 96.58%",
+        "metrics": [
+          {
+            "label": "已檢視",
+            "value": 49176,
+            "unit": "輛"
+          },
+          {
+            "label": "待檢視",
+            "value": 1741,
+            "unit": "輛"
+          },
+          {
+            "label": "異常數",
+            "value": 39,
+            "unit": "輛"
+          },
+          {
+            "label": "檢視進度",
+            "value": 96.58,
+            "unit": "%"
+          }
+        ],
+        "asOf": "2026-09-21",
+        "readAt": "2026-11-05T16:53:05.109Z",
+        "notes": [],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1025413118#gid=1025413118"
+      },
+      "fetchSpec": {
+        "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/export?format=csv&gid=1025413118&range=A1:J5",
+        "parser": "locks"
+      },
+      "refreshError": null
+    },
+    {
+      "id": "maintenance-1094019733",
+      "group": "維護",
+      "name": "例行專案_拉皮專案",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1094019733#gid=1094019733",
+      "purpose": "例行專案_拉皮專案",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "例行專案_拉皮專案",
+        "summary": "2025年雙北應更換13,107輛、已更換2,687輛、剩餘10,420輛。2024年台北原表標為「已完成」，但仍列剩餘4輛，需核對。",
+        "metrics": [
+          {
+            "label": "2025雙北應更換",
+            "value": 13107,
+            "unit": "輛"
+          },
+          {
+            "label": "2025雙北已更換",
+            "value": 2687,
+            "unit": "輛"
+          },
+          {
+            "label": "2025雙北剩餘",
+            "value": 10420,
+            "unit": "輛"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:43.473Z",
+        "notes": [
+          "來源未填明確更新日期；「2026年6月前」為計畫標題，不能當作最新資料日期。",
+          "原表資料有矛盾：2024台北標示已完成，但D3:F3仍為3494／3490／4；2025雙北F12剩10420，月計畫O14剩10425，相差5輛。圖卡沿用左側主摘要，不自行修正來源。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1094019733#gid=1094019733",
+        "details": [
+          {
+            "label": "2024台北原表",
+            "value": "應3494／已3490／剩4；狀態寫已完成"
+          },
+          {
+            "label": "2025雙北月計畫餘數",
+            "value": "10425輛（與主摘要剩10420不一致）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-1927417242",
+      "group": "維護",
+      "name": "測試專案_2.0耐磨外胎(V02)",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1927417242#gid=1927417242",
+      "purpose": "測試專案_2.0耐磨外胎(V02)",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_2.0耐磨外胎(V02)",
+        "summary": "逐車測試紀錄已登錄26筆，其中26筆有安裝日期、2筆故障更換欄有填。最晚安裝日2025-10-27。最近故障更換日2026-09-23。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 26,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 26,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 2,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:43.457Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1927417242#gid=1927417242",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2025-10-27"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "2026-09-23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-336590962",
+      "group": "維護",
+      "name": "測試專案_2.0耐磨外胎(V0&V1)",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=336590962#gid=336590962",
+      "purpose": "測試專案_2.0耐磨外胎(V0&V1)",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_2.0耐磨外胎(V0&V1)",
+        "summary": "逐車測試紀錄已登錄32筆，其中32筆有安裝日期、4筆故障更換欄有填。最晚安裝日2026-05-13。最近故障更換日2026-08-20。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 32,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 32,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 4,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:44.066Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=336590962#gid=336590962",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2026-05-13"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "2026-08-20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-343650301",
+      "group": "維護",
+      "name": "測試專案_2.0E耐磨外胎",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=343650301#gid=343650301",
+      "purpose": "測試專案_2.0E耐磨外胎",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_2.0E耐磨外胎",
+        "summary": "逐車測試紀錄已登錄16筆，其中16筆有安裝日期、0筆故障更換欄有填。最晚安裝日2026-06-07。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 16,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 16,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 0,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:44.566Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=343650301#gid=343650301",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2026-06-07"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "尚無日期紀錄"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-306750949",
+      "group": "維護",
+      "name": "測試專案_ESG 2.0測試置物籃",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=306750949#gid=306750949",
+      "purpose": "測試專案_ESG 2.0測試置物籃",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_ESG 2.0測試置物籃",
+        "summary": "逐車測試紀錄已登錄50筆，其中50筆有安裝日期、6筆故障更換欄有填。最晚安裝日2026-02-06。最近故障更換日2026-10-20。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 50,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 50,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 6,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:44.067Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=306750949#gid=306750949",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2026-02-06"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "2026-10-20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-1719786781",
+      "group": "維護",
+      "name": "測試專案_ESG 2.0E測試置物籃",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1719786781#gid=1719786781",
+      "purpose": "測試專案_ESG 2.0E測試置物籃",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_ESG 2.0E測試置物籃",
+        "summary": "逐車測試紀錄已登錄50筆，其中50筆有安裝日期、0筆故障更換欄有填。最晚安裝日2026-07-23。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 50,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 50,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 0,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:44.139Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1719786781#gid=1719786781",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2026-07-23"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "尚無日期紀錄"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-1283990841",
+      "group": "維護",
+      "name": "測試專案_緩升溫坐墊",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1283990841#gid=1283990841",
+      "purpose": "測試專案_緩升溫坐墊",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_緩升溫坐墊",
+        "summary": "逐車測試紀錄已登錄300筆，其中300筆有安裝日期、4筆故障更換欄有填。最晚安裝日2026-06-10。最近故障更換日2026-10-24。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 300,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 300,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 4,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:44.138Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=1283990841#gid=1283990841",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2026-06-10"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "2026-10-24"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-659786688",
+      "group": "維護",
+      "name": "測試專案_一般坐墊",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=659786688#gid=659786688",
+      "purpose": "測試專案_一般坐墊",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "測試專案_一般坐墊",
+        "summary": "逐車測試紀錄已登錄1467筆，其中1467筆有安裝日期、466筆故障更換欄有填。最晚安裝日2025-10-31。最近故障更換日2026-10-26。",
+        "metrics": [
+          {
+            "label": "已登錄測試紀錄",
+            "value": 1467,
+            "unit": "筆"
+          },
+          {
+            "label": "有安裝日期",
+            "value": 1467,
+            "unit": "筆"
+          },
+          {
+            "label": "故障更換欄有填",
+            "value": 466,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:44:20.654Z",
+        "notes": [
+          "登錄筆數以項次為數字且「車號」欄有填的紀錄計；排除只有預編項次的空白列。不公開車號。",
+          "故障更換欄有填表示已有更換紀錄，不代表測試完成；原表未提供統一完成率或最後更新日期。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=659786688#gid=659786688",
+        "details": [
+          {
+            "label": "最晚安裝日期",
+            "value": "2025-10-31"
+          },
+          {
+            "label": "最近故障更換日期",
+            "value": "2026-10-26"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maintenance-205253939",
+      "group": "維護",
+      "name": "專案總表",
+      "url": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=205253939#gid=205253939",
+      "purpose": "專案總表",
+      "sourceSheet": "維護",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "專案總表",
+        "summary": "專案總表列有16項專案；提供專案類別、名稱與開案日期。各專案最新處理進度請依對應分頁摘要查看。",
+        "metrics": [
+          {
+            "label": "列冊專案",
+            "value": 16,
+            "unit": "項"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:42:45.140Z",
+        "notes": [
+          "「開案日期」是專案開始日期，不能當作最後更新日期或完成狀態。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1-oGpgxBkYOD1jHXS5imCi1aWJ-OKRrru0AdI1M8kFsk/edit?gid=205253939#gid=205253939"
+      }
+    },
+    {
+      "id": "customer-2",
+      "group": "客服",
+      "name": "累進簡訊統計-2026/10",
+      "url": "https://docs.google.com/spreadsheets/d/1Nz4NiyK2sb1VkLQ2ccmY9dqnuT_BPLVRi3reltWMeog/edit?gid=848646282#gid=848646282",
+      "purpose": "累進費率發送數據",
+      "sourceSheet": "客服",
+      "sourceRow": 2,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "累進簡訊統計-2026/10",
+        "summary": "登入讀取快照：2026/10原表簡訊發送共計10,429則（台北5,553、新北4,876）。另11月已有部分紀錄至11/05，原表累計1,841則。",
+        "metrics": [
+          {
+            "label": "2026/10發送共計",
+            "value": 10429,
+            "unit": "則"
+          },
+          {
+            "label": "10月台北發送",
+            "value": 5553,
+            "unit": "則"
+          },
+          {
+            "label": "10月新北發送",
+            "value": 4876,
+            "unit": "則"
+          },
+          {
+            "label": "11月發送（部分）",
+            "value": 1841,
+            "unit": "則"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "10月數字採來源指定月份的D124、D127、D128；11月數字採對應11月分頁相同總計欄。未把整本工作簿歷史資料列數當成KPI。",
+          "11月來源有填資料至11/05，後續日期空白；11月屬部分月份。10月部分時段亦有空白，沿用原表月總計，未宣稱每日填報完整。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1Nz4NiyK2sb1VkLQ2ccmY9dqnuT_BPLVRi3reltWMeog/edit?gid=848646282#gid=848646282"
+      }
+    },
+    {
+      "id": "customer-3",
+      "group": "客服",
+      "name": "客服會議週報",
+      "url": null,
+      "purpose": "客服會議用",
+      "sourceSheet": "客服",
+      "sourceRow": 3,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "客服會議週報",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "客服會議用"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-4",
+      "group": "客服",
+      "name": "客服會議週報-經常無車無位統計表",
+      "url": null,
+      "purpose": "客服會議用",
+      "sourceSheet": "客服",
+      "sourceRow": 4,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "客服會議週報-經常無車無位統計表",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "客服會議用"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-5",
+      "group": "客服",
+      "name": "事故車報表(日)",
+      "url": null,
+      "purpose": "統計事故車數量",
+      "sourceSheet": "客服",
+      "sourceRow": 5,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "事故車報表(日)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計事故車數量"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-6",
+      "group": "客服",
+      "name": "事故車報表(月)",
+      "url": null,
+      "purpose": "統整事故車數量",
+      "sourceSheet": "客服",
+      "sourceRow": 6,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "事故車報表(月)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統整事故車數量"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-7",
+      "group": "客服",
+      "name": "非事故車報表(日)",
+      "url": null,
+      "purpose": "統整非事故車數量",
+      "sourceSheet": "客服",
+      "sourceRow": 7,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "非事故車報表(日)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統整非事故車數量"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-8",
+      "group": "客服",
+      "name": "事故及非事故追蹤記錄(月報)",
+      "url": null,
+      "purpose": "統整事故非事故案件數量及追蹤結案狀況",
+      "sourceSheet": "客服",
+      "sourceRow": 8,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "事故及非事故追蹤記錄(月報)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統整事故非事故案件數量及追蹤結案狀況"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-9",
+      "group": "客服",
+      "name": "遺失車報表(日)",
+      "url": null,
+      "purpose": "統計遺失車尋回數量",
+      "sourceSheet": "客服",
+      "sourceRow": 9,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "遺失車報表(日)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計遺失車尋回數量"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-10",
+      "group": "客服",
+      "name": "服務中心例會報告",
+      "url": null,
+      "purpose": "客服會議用",
+      "sourceSheet": "客服",
+      "sourceRow": 10,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "服務中心例會報告",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "客服會議用"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-11",
+      "group": "客服",
+      "name": "AI真人客服報告(週)",
+      "url": null,
+      "purpose": "統計AI客服進線",
+      "sourceSheet": "客服",
+      "sourceRow": 11,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "AI真人客服報告(週)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計AI客服進線"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-12",
+      "group": "客服",
+      "name": "AI真人客服報告(月)",
+      "url": null,
+      "purpose": "統計AI客服進線",
+      "sourceSheet": "客服",
+      "sourceRow": 12,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "AI真人客服報告(月)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計AI客服進線"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-13",
+      "group": "客服",
+      "name": "2.0車輛黑屏&車機軟體異常(未成功還車)派工統計",
+      "url": null,
+      "purpose": "統計未成功還車及還車無反應案件",
+      "sourceSheet": "客服",
+      "sourceRow": 13,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "2.0車輛黑屏&車機軟體異常(未成功還車)派工統計",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計未成功還車及還車無反應案件"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-14",
+      "group": "客服",
+      "name": "新北服務中心退款、遺失物、註冊統計表",
+      "url": null,
+      "purpose": "統計服務中心作業",
+      "sourceSheet": "客服",
+      "sourceRow": 14,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "新北服務中心退款、遺失物、註冊統計表",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計服務中心作業"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-15",
+      "group": "客服",
+      "name": "北區客服組現金繳回調查表",
+      "url": null,
+      "purpose": "登記服務中心繳回金額",
+      "sourceSheet": "客服",
+      "sourceRow": 15,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "北區客服組現金繳回調查表",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "登記服務中心繳回金額"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-16",
+      "group": "客服",
+      "name": "系統優化會議雙北客戶服務說明",
+      "url": null,
+      "purpose": "會議用",
+      "sourceSheet": "客服",
+      "sourceRow": 16,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "系統優化會議雙北客戶服務說明",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "會議用"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-17",
+      "group": "客服",
+      "name": "遺失車1個月外撥",
+      "url": null,
+      "purpose": "統計遺失車超過1個月以上通知數量及內容",
+      "sourceSheet": "客服",
+      "sourceRow": 17,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "遺失車1個月外撥",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統計遺失車超過1個月以上通知數量及內容"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-18",
+      "group": "客服",
+      "name": "遺失車報表作業",
+      "url": "https://docs.google.com/spreadsheets/d/1G9AncTsb83LK0F7xa6rOQbv7H9lHqZb92Ci5fWf667I/edit?gid=1289004014#gid=1289004014",
+      "purpose": "統計每日遺失車追蹤",
+      "sourceSheet": "客服",
+      "sourceRow": 18,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "遺失車報表作業",
+        "summary": "登入讀取快照：「備案追蹤總表」抬頭標示2026/11/06雙北失聯車備案追蹤表；本次可核對追蹤表日期，未取得可直接引用的最新週／月總計。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "抬頭日期不能證明每筆個案都在該日更新，因此未自行以工作簿名單總列數產生最新遺失車KPI。",
+          "未公開人名、電話、卡號、車號或個案地址。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1G9AncTsb83LK0F7xa6rOQbv7H9lHqZb92Ci5fWf667I/edit?gid=1289004014#gid=1289004014",
+        "details": [
+          {
+            "label": "追蹤表抬頭日期",
+            "value": "2026-11-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-19",
+      "group": "客服",
+      "name": "遺失車備銷案車輛",
+      "url": "https://docs.google.com/spreadsheets/d/11ud9tSTt_zFrD36BKWtUVlBvGMY-Ie6b7PhsKWMIeJY/edit?gid=115634361#gid=115634361",
+      "purpose": "遺失車公司備銷案整理作業",
+      "sourceSheet": "客服",
+      "sourceRow": 19,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "遺失車備銷案車輛",
+        "summary": "登入讀取快照：公司報銷案遺失車總表可辨識的最近銷案日期為2026-10-20，最近尋獲日期為2026-10-19；原表為逐車紀錄，未提供最新週／月總計。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "僅掃描表頭明確定義的B欄「銷案時間」、P欄「尋獲日期」取得最近有效日期；日期不等同來源最後編輯時間。",
+          "沒有將全歷史名單行數當作本週處理數或尚待銷案數；未公開個案識別資料。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/11ud9tSTt_zFrD36BKWtUVlBvGMY-Ie6b7PhsKWMIeJY/edit?gid=115634361#gid=115634361",
+        "details": [
+          {
+            "label": "最近銷案日期",
+            "value": "2026-10-20"
+          },
+          {
+            "label": "最近尋獲日期",
+            "value": "2026-10-19"
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-20",
+      "group": "客服",
+      "name": "雙北客服信箱統計",
+      "url": "https://docs.google.com/spreadsheets/d/1YVIaA-VhOF2OsA7RqbjG1_BHXolo_fGDtEmWcbP37f8/edit?gid=1779183992#gid=1779183992",
+      "purpose": "雙北客服信箱資料統整",
+      "sourceSheet": "客服",
+      "sourceRow": 20,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "雙北客服信箱統計",
+        "summary": "登入讀取快照：來源來信日期統計區間為2026/10/26–11/01；2.0無車可借來信台北20件、新北12件，無位可還台北7件、新北5件。",
+        "metrics": [
+          {
+            "label": "台北2.0無車來信",
+            "value": 20,
+            "unit": "件"
+          },
+          {
+            "label": "新北2.0無車來信",
+            "value": 12,
+            "unit": "件"
+          },
+          {
+            "label": "台北2.0無位來信",
+            "value": 7,
+            "unit": "件"
+          },
+          {
+            "label": "新北2.0無位來信",
+            "value": 5,
+            "unit": "件"
+          }
+        ],
+        "asOf": "2026-11-01",
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "僅列來源B欄明確分類合計，代表上述來信分類，並非全體客服信箱總量。",
+          "來源統計區間由E1、H1設定；未使用不同區間的結案時間分頁混算，也未將所有歷史明細列數當成最新週KPI。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1YVIaA-VhOF2OsA7RqbjG1_BHXolo_fGDtEmWcbP37f8/edit?gid=1779183992#gid=1779183992"
+      }
+    },
+    {
+      "id": "customer-21",
+      "group": "客服",
+      "name": "微笑單車簡易代辦服務中心-總表",
+      "url": "https://docs.google.com/spreadsheets/d/1MG_J7HITvF0DrTZdX7Fla0wH1T4THOqJkVRDbBHWLzE/edit?gid=919291519#gid=919291519",
+      "purpose": "簡易代表服務中心作業",
+      "sourceSheet": "客服",
+      "sourceRow": 21,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "微笑單車簡易代辦服務中心-總表",
+        "summary": "登入讀取快照：來源「業務統計」目前設定的彙總區間為2025-06-01至2026-02-01，較本次11月需求早；無法把該舊區間數字當作11月最新進度。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "已辨識「業務統計」日期控制S4/T4；退款金額表另有較早區間。兩者均未作為2026/11最新KPI。",
+          "原表包含退費、遺失物與諮詢個案，未將全歷史資料列數或不同時段數值混成單一新進度。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1MG_J7HITvF0DrTZdX7Fla0wH1T4THOqJkVRDbBHWLzE/edit?gid=919291519#gid=919291519",
+        "details": [
+          {
+            "label": "原表設定統計起日",
+            "value": "2025-06-01"
+          },
+          {
+            "label": "原表設定統計迄日",
+            "value": "2026-02-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "customer-22",
+      "group": "客服",
+      "name": "派工週報(週)",
+      "url": null,
+      "purpose": "統整上週派工數量/結案",
+      "sourceSheet": "客服",
+      "sourceRow": 22,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "派工週報(週)",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統整上週派工數量/結案"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-23",
+      "group": "客服",
+      "name": "匯款退費",
+      "url": null,
+      "purpose": "統整匯款退費資訊",
+      "sourceSheet": "客服",
+      "sourceRow": 23,
+      "linkStatus": "offline",
+      "progress": {
+        "state": "offline",
+        "title": "匯款退費",
+        "summary": "原始清單標示為線下表單，尚未提供檔案或線上連結。",
+        "metrics": [],
+        "asOf": null,
+        "readAt": null,
+        "notes": [
+          "統整匯款退費資訊"
+        ],
+        "sourceUrl": null
+      }
+    },
+    {
+      "id": "customer-24",
+      "group": "客服",
+      "name": "全台 車機/車鎖 異常統計表",
+      "url": "https://docs.google.com/spreadsheets/d/1T1CBAIKY4zgWOvp0y7_LDXF_dfrV19mWc_sF7yNGZog/edit?gid=1358963767#gid=1358963767",
+      "purpose": "全台 車機/車鎖 異常統計表",
+      "sourceSheet": "客服",
+      "sourceRow": 24,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "全台車機／車鎖異常統計",
+        "summary": "本週（11/02–11/08）原表來電44件、派工26件，仍屬部分填報；來電日表填至11/05、派工日表填至11/03。最近完整月為2026/10：來電4,382件、派工4,667件。",
+        "metrics": [
+          {
+            "label": "原表本週來電（部分）",
+            "value": 44,
+            "unit": "件"
+          },
+          {
+            "label": "原表本週派工（部分）",
+            "value": 26,
+            "unit": "件"
+          },
+          {
+            "label": "2026/10來電（完整月）",
+            "value": 4382,
+            "unit": "件"
+          },
+          {
+            "label": "2026/10派工（完整月）",
+            "value": 4667,
+            "unit": "件"
+          }
+        ],
+        "asOf": "2026-11-05",
+        "readAt": "2026-11-05T16:39:10.185Z",
+        "notes": [
+          "本週尚未完整填報：來電日表最新有資料為11/05，當日僅台中、嘉市、嘉縣3地有填；派工日表最新為11/03，當日亦僅3地有填。空白不視為0。",
+          "原表週統計存在地區名稱「嘉義／嘉縣」不一致：本週來電日表已填數值實加48件、週表44件（差嘉縣4件）；派工日表實加27件、週表26件（差嘉縣1件）。圖卡本週數字沿用原表，並列此差異供核對。",
+          "最近完整月2026/10：兩種日表四分類均具13地×31日=403格數字，逐格加總與月表完全一致。月表直接引用日表儲存格，未受本次嘉義／嘉縣名稱匹配差異影響。",
+          "11月月表城市資料空白，總計公式顯示的0不代表無異常；未採作完整月數字。",
+          "「截至11/05」表示來源最新有填報日期，並非全台各地均更新至該日。這份摘要來自本次登入後匯出快照。"
+        ],
+        "details": [
+          {
+            "label": "11/02–11/08 來電週統計・2.0 車機（部分）",
+            "value": "32件"
+          },
+          {
+            "label": "11/02–11/08 來電週統計・2.0E 車機（部分）",
+            "value": "9件"
+          },
+          {
+            "label": "11/02–11/08 來電週統計・2.0 車鎖（部分）",
+            "value": "3件"
+          },
+          {
+            "label": "11/02–11/08 來電週統計・2.0E 車鎖（部分）",
+            "value": "0件"
+          },
+          {
+            "label": "11/02–11/08 派工週統計・2.0 車機（部分）",
+            "value": "17件"
+          },
+          {
+            "label": "11/02–11/08 派工週統計・2.0E 車機（部分）",
+            "value": "6件"
+          },
+          {
+            "label": "11/02–11/08 派工週統計・2.0 車鎖（部分）",
+            "value": "2件"
+          },
+          {
+            "label": "11/02–11/08 派工週統計・2.0E 車鎖（部分）",
+            "value": "1件"
+          },
+          {
+            "label": "2026/10 來電月統計・2.0 車機",
+            "value": "3021件"
+          },
+          {
+            "label": "2026/10 來電月統計・2.0E 車機",
+            "value": "719件"
+          },
+          {
+            "label": "2026/10 來電月統計・2.0 車鎖",
+            "value": "560件"
+          },
+          {
+            "label": "2026/10 來電月統計・2.0E 車鎖",
+            "value": "82件"
+          },
+          {
+            "label": "2026/10 派工月統計・2.0 車機",
+            "value": "3261件"
+          },
+          {
+            "label": "2026/10 派工月統計・2.0E 車機",
+            "value": "683件"
+          },
+          {
+            "label": "2026/10 派工月統計・2.0 車鎖",
+            "value": "631件"
+          },
+          {
+            "label": "2026/10 派工月統計・2.0E 車鎖",
+            "value": "92件"
+          }
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1T1CBAIKY4zgWOvp0y7_LDXF_dfrV19mWc_sF7yNGZog/edit?gid=1358963767#gid=1358963767"
+      }
+    },
+    {
+      "id": "customer-25",
+      "group": "客服",
+      "name": "欠費及鎖帳數量統計",
+      "url": "https://docs.google.com/spreadsheets/d/15arqsjwl0oAi6yhbnJtokopVtr_QtHIh3_DJtibqux4/edit?gid=3318559#gid=3318559",
+      "purpose": "欠費簡訊統計",
+      "sourceSheet": "客服",
+      "sourceRow": 25,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "欠費及鎖帳數量統計",
+        "summary": "登入讀取快照：115年表最新有填數字的月份為2026/10，鎖帳號提醒原表合計1,021筆、鎖帳共計1,510筆。10月欠費及11月欄位尚未有可核對填報，不能視為0筆。",
+        "metrics": [
+          {
+            "label": "2026/10鎖帳提醒（已填）",
+            "value": 1021,
+            "unit": "筆"
+          },
+          {
+            "label": "2026/10鎖帳（已填）",
+            "value": 1510,
+            "unit": "筆"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "來源「115年欠費及鎖帳數量統計」C174為10月鎖帳共計；10月欠費和11月各項的總計公式雖為0，但對應每日欄位空白，未把空白當作實際0筆。",
+          "原表無明確更新日期；10月也只採已填資料，不宣稱整月完整。",
+          "這是提醒簡訊數量統計，未將提醒次數當作唯一欠費帳戶數。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/15arqsjwl0oAi6yhbnJtokopVtr_QtHIh3_DJtibqux4/edit?gid=3318559#gid=3318559"
+      }
+    },
+    {
+      "id": "customer-26",
+      "group": "客服",
+      "name": "遺失物登記表(僅限拾獲)",
+      "url": "https://docs.google.com/spreadsheets/d/1TRHdZZW7TpqCLdUMvWVwOSWenbCNUwpuJv2W2_NOGuw/edit?gid=1298186897#gid=1298186897",
+      "purpose": "遺失物表單數計",
+      "sourceSheet": "客服",
+      "sourceRow": 26,
+      "linkStatus": "online",
+      "progress": {
+        "state": "ok",
+        "title": "遺失物登記表(僅限拾獲)",
+        "summary": "登入讀取快照：2026年11月原表月統整目前為拾獲12件、領回5件、未領7件；本月仍在進行。",
+        "metrics": [
+          {
+            "label": "11月拾獲",
+            "value": 12,
+            "unit": "件"
+          },
+          {
+            "label": "11月領回",
+            "value": 5,
+            "unit": "件"
+          },
+          {
+            "label": "11月未領",
+            "value": 7,
+            "unit": "件"
+          }
+        ],
+        "asOf": null,
+        "readAt": "2026-11-05T16:51:51.213Z",
+        "notes": [
+          "登入讀取快照；讀取時間與來源資料日期分開列示，未修改原表。",
+          "採「遺失物統整」2026年區塊、11月L欄的明確月合計，並非全歷史拾獲數。",
+          "原表未提供這個月合計的每日截至時間；不把讀取日期宣稱為全部案件最後更新日。拾獲12減領回5與未領7核對相符。",
+          "未列姓名、聯絡方式或物品個案明細。"
+        ],
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1TRHdZZW7TpqCLdUMvWVwOSWenbCNUwpuJv2W2_NOGuw/edit?gid=1298186897#gid=1298186897"
+      }
+    }
+  ]
+}
